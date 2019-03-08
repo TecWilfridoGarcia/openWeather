@@ -30,8 +30,4 @@ export class AppComponent {
     })
   }
 
-  openDialogApp(id) {
-  this.dialog.open(DialogCity, {
-  });
-}
 }

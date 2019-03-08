@@ -10,6 +10,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { DialogCity } from './open-dialog-city';
 import { CityAppComponent } from './city-app/city-app.component';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import { CityAppComponent } from './city-app/city-app.component';
     MatTabsModule,
     MatCardModule,
     MatButtonModule,
+    MatTableModule
 
   ],
   entryComponents:[
