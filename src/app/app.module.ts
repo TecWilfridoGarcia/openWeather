@@ -1,23 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
-import { HomeComponent } from './home/home.component';
-import { InfoComponent } from './info/info.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { DialogCity } from './open-dialog-city';
+import { CityAppComponent } from './city-app/city-app.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    InfoComponent
+    DialogCity,
+    CityAppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatTabsModule,
+    MatCardModule,
+    MatButtonModule,
+
+  ],
+  entryComponents:[
+    DialogCity
   ],
   providers: [],
   bootstrap: [AppComponent]
